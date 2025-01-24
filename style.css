@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    background-color: #2A1B3D;
+    background-image: url("neon4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    min-width: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2.5rem;
+    color: #cc6bec;
+    font-weight: 600;
+    margin-left: 6rem;
+}
+.navbar a{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 6rem;
+    margin-right: 3rem;
+}
+.navbar a:hover, .navbar a.active{
+    color: #cc6bec; 
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color:white;
+}
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #cc6bec;
+}
+.home-img{
+  padding: 40px;
+  margin: 20px;
+}
+.home-img img{
+    /* width:30vw; */
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+    
+}
+.about-img{
+  margin: 20px;
+}
+.about-img img{
+    /* width:30vw; */
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+}
+.home-content p{
+    font-size: 1.6rem;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid #cc6bec;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #cc6bec;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.social-media a:hover{
+    background: #cc6bec;
+    color: #2A1B3D;
+    box-shadow: 0 0 1rem #cc6bec;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: #301d47; */
+    height: 100vh;
+}
+.heading{
+    text-align: left;
+    font-size: 4.5rem;
+
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+    color: #cc6bec;
+}
+.about-content h3{
+    text-align: left;
+    font-size: 2.6rem;
+
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+
+}
+
+.profiles{
+    
+    gap: 2rem;
+    /* background-color: #301d47; */
+    height: 100vh;
+}
+.profiles h2{
+    text-align: center;
+    margin-top: 40px;
+}
+ 
+
+/* styles.css */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+  }
+  
+  .image-container a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 350px; /* Set the desired width for each image link */
+    height: 250px; /* Set the desired height for each image link */
+    overflow: hidden;
+ /* Hide any overflow if images are larger than the specified dimensions */
+    box-shadow: 0 0 1rem #301d47;
+    
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    border: 6px solid #cc6bec;
+
+    border-radius: 8px;
+  }
+  
+  .image-container a:hover{
+    width: 400px;
+    height: 300px;
+    transition: 2s;
+    
+  }
+
+  /* skills */
+  .skills{
+    height: 100vh;
+  }
+  .skills h2{
+    margin-top: 30px;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  .skills-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+.skills-container .skill-box{
+    flex: 1 1 30rem;
+    background: rgba(64, 39, 95, 0.7);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #40275f;
+    transition: .5s ease;
+}
+.skills-container .skill-box:hover{
+    border-color: #cc6bec;
+    transform: scale(1.02);
+}
+.skill-box i{
+    font-size: 7rem;
+    color: #cc6bec;
+}
+.skill-box h3{
+    font-size: 2.6rem;
+}
+.skill-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+/* contact us */
+.contact{
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+  }
+ 
+  .contact-info{
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+  }
+  .contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+    color: #cc6bec;
+  }
+  .contact-info i:hover{
+    border-radius: 2px;
+    background: #cc6bec;
+    color: #2A1B3D;
+    box-shadow: 0 0 1rem #cc6bec;
+}
+  .contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+    display: inline-block;
+    padding: 30px;
+  }
+  .contact-info, .contact-form{
+    flex: 1;
+  }
+  .contact-form h2{
+  color: #fff;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+
+  }
+  .contact-form .text-box{
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+     border: 1px solid #cc6bec;
+   width: 100%;
+   height: 40px;
+   padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  .contact-form .text-box:first-child{
+    margin-right: 15px;
+  }
+  .contact-form textarea{
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    border: 1px solid #cc6bec;
+    width:100%;
+    padding: 10px;
+    font-size: 15px;
+ 
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  .contact-form .send-btn{
+    float: right;
+    background: rgb(232, 20, 232);
+    color: #ffff;
+    border: none;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+    letter-spacing: 2px;
+    border-radius: 5px;
+  }
+
+  .contact-form .send-btn:hover{
+    background: #4456;
+  }
